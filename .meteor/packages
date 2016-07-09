@@ -25,3 +25,4 @@ meteorhacks:npm
 npm-container
 static-html							# handle html
 materialize:materialize
+react-meteor-data
