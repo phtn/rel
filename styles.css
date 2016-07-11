@@ -1,6 +1,48 @@
+nav {
+	background-color: #222;
+	margin-top: 0px;
+}
+.dd-menu {
+	width: 250px !important;
+	margin-top: 56px;
+}
 .brand-logo {
-	margin-left: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #D32F2F !important;
+}
+.inquire {
+	margin-right: 20px;
+}
+.menu {
+	margin-left: 15px;
+	color: #BDBDBD;
+}
+.header {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-align: center;
 }
 .card {
 	padding: 20px;
+}
+
+span.title {
+	font-weight: bolder;
+}
+
+.services {
+	color: #D32F2F !important;
+}
+
+
+@media screen and (max-device-width: 500px) {
+    .card-services {
+        max-height: 700px !important;
+        min-height: 700px !important;
+    }
+
+    .card-title {
+    	font-size: 35px !important;
+    }
 }
