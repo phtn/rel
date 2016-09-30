@@ -1,10 +1,19 @@
-nav {
-	background-color: #222;
-	margin-top: 0px;
+::-webkit-scrollbar { 
+    display: none; 
 }
-.dd-menu {
+body {
+	/*background-color: #eee;*/
+}
+
+nav {
+	background-color: #ccc;
+	margin-top: 0px;
+	/*border-bottom: 2px solid #eee;*/
+	opacity: 0.8;
+}
+#dd-menu {
 	width: 250px !important;
-	margin-top: 56px;
+	margin-top: 60px !important;
 }
 .brand-logo {
 	font-family: 'Roboto', sans-serif;
@@ -16,25 +25,62 @@ nav {
 }
 .menu {
 	margin-left: 15px;
-	color: #BDBDBD;
+	color: #D32F2F;
 }
 .header {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	text-align: center;
 }
-.card {
-	padding: 20px;
+.header-name {
+	margin: 40px 0px;
+}
+.dropdown-content {
+	max-width: 130px;
+	margin-top: 20px;
+	opacity: 1 !important;
+
+}
+.card-title {
+	margin-bottom: 30px;
+}
+.card-reveal {
+	background-color: #eee !important;
 }
 
 span.title {
 	font-weight: bolder;
 }
 
+
+/* SERVICES */
+
 .services {
 	color: #D32F2F !important;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+}
+.contact {
+	color: #D32F2F;
+	font-size: 20px;
+}
+.collapsible {
+	background-color: #eee;
+}
+.more-icon {
+	color: #ccc;
+}
+.collection-item {
+	background-color: transparent !important;
+	border: 0px solid #D32F2F;
+	font-family: 'Roboto', sans-serif;
+	/*font-weight: 100;*/
 }
 
+.divider {
+	max-width: 50%;
+	border: 0px;
+}
 
 @media screen and (max-device-width: 500px) {
     .card-services {
@@ -45,4 +91,35 @@ span.title {
     .card-title {
     	font-size: 35px !important;
     }
+}
+
+.close-reveal {
+	margin-right: 10px;
+	color: #666;
+}
+
+/* COLLAPSIBLE */
+.contact-div {
+	max-width: 70%;
+}
+.collapsible-header {
+	font-size: 20px;
+}
+.collapsible-body {
+	/*padding: 20px;*/
+	margin: 10px 30px;
+}
+.fab-list {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+/* FOOTER */
+
+.page-footer {
+	background-color: #333 !important
+}
+.footer-title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 }
