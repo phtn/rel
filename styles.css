@@ -123,3 +123,13 @@ span.title {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 }
+
+.span-email {
+	margin-left: 20px;
+}
+.span-message {
+	margin-left: 10px;
+}
+.span-createdat {
+	margin-left: 10px;
+}

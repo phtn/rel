@@ -65,7 +65,7 @@ class ContactUs extends Component {
 						      <div className="row">
 						        <div className="input-field col s12">
 						          <input ref="messageInput" id="message" type="text" className="validate" onChange={this.updateMessage.bind(this)} />
-						          <label htmlFor="message">Message</label>
+						          <label htmlFor="message">Questions & Inquiries here...</label>
 						        </div>
 						      </div>
 						      <div className="row center">

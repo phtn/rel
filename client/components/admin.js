@@ -6,8 +6,11 @@ import { Messages } from '../../collections/messages.js';
 class AdminPage extends Component {
 	showReceivedMsgs () {
 		return this.props.messages.map((msgs)=> (
-				<li key={msgs._id} className="list-group-item">
-					1 {msgs.name} 
+				<li key={msgs._id} className="collection-item animated fadeInDown">
+					<div className="col-xs-3">Name: {msgs.name}</div>
+					<div className="col-xs-3">Email: {msgs.email}</div>
+					<div className="col-xs-3">Message: {msgs.message}</div>
+					<div className="col-xs-3">Date: {msgs.createdAt.toString()}</div>
 				</li>
 		));
 	}
@@ -18,23 +21,23 @@ class AdminPage extends Component {
 		return (
 			<div className="container-fluid">
 				<div className="navbar-fixed">
-					<nav>
-				    <div className="nav-wrapper">
-				    	
-				      <a href="/admin" className="brand-logo center">
-				      	<div className="row">
-				      		<div className="col-xs-6">
-				      			Admin Page
-				      		</div>
-				      	</div>
-				      </a>
-				    
-				    </div>
-				  </nav>
-				</div>
+									<nav>
+								    <div className="nav-wrapper">
+								    	
+								      <a href="/admin" className="brand-logo center">
+								      	<div className="row">
+								      		<div className="col-xs-6">
+								      			Admin Page
+								      		</div>
+								      	</div>
+								      </a>
+								    
+								    </div>
+								  </nav>
+								</div>
 
 				<div className="container-fluid">
-					<ul className="list-group">
+					<ul className="collection">
 						{this.showReceivedMsgs()}
 					</ul>
 				</div>
@@ -50,6 +53,6 @@ AdminPage.propTypes = {
 
 export default createContainer(()=> {
 	return {
-		messages: Messages.find().fetch()
+		messages: Messages.find().fetch().reverse()
 	}
 }, AdminPage);
